@@ -1,87 +1,168 @@
-<!DOCTYPE html> <!--declaration that this is a html5 file-->
+<!DOCTYPE html>
+<!--declaration that this is a html5 file-->
 <html>
-    <head>
-        <title> 
-            MY FIRST WEB PAGE? NAH JK
-        </title> <!--this will be shown as the tab name so look there-->
-    </head>
-    <body> <!--this contains the visible elemnts of the page-->
-        <!--also the heading tag will have equivalent line breaks
+  <head>
+    <link rel="icon" type="image/jpg" href="images/favicon.jpg" />
+    <title>MY FIRST WEB PAGE? NAH JK</title>
+    <!--this will be shown as the tab name so look there-->
+  </head>
+  <body>
+    <!--this contains the visible elemnts of the page-->
+    <!--also the heading tag will have equivalent line breaks
          between them no matter the type-->
-        <h1>NESS</h1>
-        <h2>NESS</h2>
-        <h3>NESS</h3>
-        <h4>NESS</h4>
-        <h5>NESS</h5>
-        <h6>NESS</h6>
-        <hr><!--this is a self closing tag-->
-        <br><!--this is a self closing tag-->
-        <!--the <p> tags have line breaks between them by default-->
-        <!--paragraph tags dont care about the line breaks inside the tag content-->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Perferendis, aperiam neque impedit aliquam hic eius repellat alias, 
-             incidunt dolores exercitationem at, fugit laboriosam modi doloribus quo maxime voluptates id non?
-        </p>
-        <!--but there is a pre formated tag <pre> that considers the paragraph format like linebreaks-->
-        <pre>
+    <h1>NESS</h1>
+    <h2>NESS</h2>
+    <h3>NESS</h3>
+    <h4>NESS</h4>
+    <h5>NESS</h5>
+    <h6>NESS</h6>
+    <hr />
+    <!--this is a self closing tag-->
+    <br /><!--this is a self closing tag-->
+    <!--the <p> tags have line breaks between them by default-->
+    <!--paragraph tags dont care about the line breaks inside the tag content-->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+      aperiam neque impedit aliquam hic eius repellat alias, incidunt dolores
+      exercitationem at, fugit laboriosam modi doloribus quo maxime voluptates
+      id non?
+    </p>
+    <!--but there is a pre formated tag <pre> that considers the paragraph format like linebreaks-->
+    <pre>
 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
 
             Perferendis, aperiam neque impedit aliquam hic eius repellat alias, 
 incidunt dolores exercitationem at, fugit laboriosam modi doloribus 
             quo maxime voluptates id non?
-        </pre>
+        </pre
+    >
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, aperiam neque impedit aliquam hic eius repellat alias, incidunt dolores exercitationem at, fugit laboriosam modi doloribus quo maxime voluptates id non?</p>
-        <br>
-        <hr>
-        <h3>Hyperlinks</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+      aperiam neque impedit aliquam hic eius repellat alias, incidunt dolores
+      exercitationem at, fugit laboriosam modi doloribus quo maxime voluptates
+      id non?
+    </p>
+    <br />
+    <hr />
+    <h3>Hyperlinks</h3>
+
+    <!--absolute hyperlinking-->
+    <a href="https://www.google.com/" target="_blank" tittle="Goes to Google">
+      Click Me</a
+    >
+
+    <br />
+
+    <a href="https://www.youtube.com/watch?v=B3Z4XGAxJB0" target="_blank">
+      End of Beginning Djo
+    </a>
+    <br />
+
+    <!--reference hyperlinking-->
+    <a href="lyrics.html"> song lyrics </a>
+
+    <br />
+
+    <!--email hyperlinking-->
+    <a href="mailto:test@fake.com"> email me </a>
+
+    <br />
+    <hr />
+
+    <img src="images/img.jpg" height="500px" alt="test image" />
+
+    <a
+      href="https://en.wikipedia.org/wiki/Rain"
+      target="_blank"
+      title="Goes to rain wikipedia"
+    >
+      <img src="images/rain.gif" alt="Rain wikipedia" />
+    </a>
+
+    <br />
+    <hr />
+
+    <audio controls autoplay muted loop>
+      <source src="audio/discord-notification.mp3" />
+    </audio>
+
+    <br />
+    <p>After Hours Album Title</p>
+    <audio controls autoplay muted loop>
+      <source src="audio/AF Album Title.mp3" />
+    </audio>
+
+    <br />
+    <hr />
+    <br />
+
+    <video
+      src="video/whiskers.mp4"
+      width="500px"
+      controls
+      autoplay
+      muted
+      loop
+    ></video>
+
+    <br />
+    <!--both format works either put the src in video tag or use source tag-->
+    <br />
+    <a
+      href="https://www.pexels.com/video/serene-tabby-cat-sunbathing-and-grooming-in-warm-sunlight-31568755/"
+      target="_blank"
+    >
+      <video height="500px" controls autoplay muted loop>
+        <source src="video/Cat.mp4" type="video/mp4" />
+        <source src="video/Cat.webm" type="video/webm" />
+      </video>
+    </a>
+
+    <p>This is a normal text</p>
+    <p>This is a <b>bold</b> text</p>
+    <p>This is a <i>italics</i> text</p>
+    <p>This is a <u>underline</u> text</p>
+    <p>This is a <del>deleted</del> text</p>
+    <p>This is a <sup>superscript</sup> text</p>
+    <p>This is a <sub>subscript</sub> text</p>
+    <p>This is a <small>small</small> text</p>
+    <p>This is a <big>big</big> text</p>
+    <p>This is a <tt>monospaced</tt> text</p>
+    <p>This is a <mark style="background-color: aqua">highlight</mark> text</p>
+
+    <br />
+    <hr />
+
+    <!-- Group together HTML -->
+    <!-- <span> inline container to group elements for styling purposes -->
+    <!-- <div> block container to group elemnents for styling purposes -->
+
+        <h1><span style="background-color: tomato;">This is a span title</span></h1> <!-- span is a inline container -->
+        <h1><div style="background-color: cyan;">This is a div title</div></h1> <!-- div is a block level container and takes effect through out the width of the document-->
+
+        <p><span style="background-color: tomato;">This is a span sentence.</span></p>
+        <p><div style="background-color: cyan;">This is a a div sentence.</div></p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta in, praesentium id eligendi ullam iste, rerum nihil qui ex eveniet ut cum neque reiciendis inventore. Consequatur soluta amet voluptatibus quo. <span style="background-color: tomato;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit aliquam porro laudantium eius, possimus cumque. Sunt inventore beatae quam nihil cupiditate tempora eos itaque explicabo, ut sint ipsa debitis autem.</span></p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta in, praesentium id eligendi ullam iste, rerum nihil qui ex eveniet ut cum neque reiciendis inventore. Consequatur soluta amet voluptatibus quo. <!-- appears in a separate block --> <div style="background-color: cyan;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit aliquam porro laudantium eius, possimus cumque. Sunt inventore beatae quam nihil cupiditate tempora eos itaque explicabo, ut sint ipsa debitis autem.</div></p>
+
+        <!-- Unordered List -->
+        <ul>
+          <li></li>
+        </ul>
+
+        <!-- Ordered List -->
+        <ol>
+          <li></li>
+        </ol>
         
-        <!--absolute hyperlinking-->
-        <a href="https://www.google.com/"
-        target="_blank"
-        tittle="Goes to Google">
-        Click Me</a>
-        
-        <br>
+        <!-- Definition List -->
+        <dl>
+          <dd></dd>
+        </dl>
 
-        <a href="https://www.youtube.com/watch?v=B3Z4XGAxJB0"
-        target="_blank">
-            End of Beginning Djo
-        </a>
-        <br>
 
-        <!--reference hyperlinking-->
-        <a href="lyrics.html">
-            song lyrics
-        </a>
-
-        <br>
-
-        <!--email hyperlinking-->
-        <a href="mailto:test@fake.com">
-            email me
-        </a>
-
-        <br>
-        <hr>
-
-        <img src="images/img.jpg"
-        height="500"
-        alt="test image">
-
-        <a href="https://en.wikipedia.org/wiki/Rain"
-        target="_blank"
-        title="Goes to rain wikipedia">
-        <img src="images/rain.gif" alt="Rain wikipedia">
-        </a>
-
-        <br>
-        <hr>
-
-        <audio controls autoplay muted loop>
-            <source src="discord-notification.mp3">
-        </audio>
-
-        
-    </body>
+  </body>
 </html>
