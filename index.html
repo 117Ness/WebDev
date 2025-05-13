@@ -149,19 +149,90 @@ incidunt dolores exercitationem at, fugit laboriosam modi doloribus
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta in, praesentium id eligendi ullam iste, rerum nihil qui ex eveniet ut cum neque reiciendis inventore. Consequatur soluta amet voluptatibus quo. <!-- appears in a separate block --> <div style="background-color: cyan;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit aliquam porro laudantium eius, possimus cumque. Sunt inventore beatae quam nihil cupiditate tempora eos itaque explicabo, ut sint ipsa debitis autem.</div></p>
 
         <!-- Unordered List -->
+         <h3>Cars</h3>
         <ul>
-          <li></li>
+          <li>Pagani Zonda R</li>
+          <li>McLaren Senna</li>
+          <li>Lamborghini Huracan STO</li>
         </ul>
 
         <!-- Ordered List -->
+         <h3>Sweets</h3>
         <ol>
-          <li></li>
+          <li>Rasgulla</li>
+          <li>Kheer</li>
+          <li>Gulab Jamun</li>
+          <li>Jalebi</li>
+          <li>Barfi</li>
         </ol>
         
         <!-- Definition List -->
+         <h3>Mythical Creatures</h3>
         <dl>
-          <dd></dd>
+          <dt>Dragon</dt>
+          <dd>A dragon is a legendary creature, a mythical beast appearing in the folklore of various cultures across the globe.</dd>
+          <dt>Oni</dt>
+          <dd>In Japanese myth, oni are people who were so truly wicked in their lives that they transformed into demons in hell.</dd>
+          <dt>Ogre</dt>
+          <dd>Ogres are featured in folktales from all around the world, and though the word is of French origin, the creature itself is derived from the man-eating ancient Etruscan god Orcus.</dd>
         </dl>
+        
+        <br>
+        <hr>
+        <br>
+        <table border="2px" style="background-color: black;">
+          <tr align="center" style="background-color: aqua;">
+            <th width="100px">Sunday</th>
+            <th width="100px">Monday</th>
+            <th width="100px">Tuesday</th>
+            <th width="100px">Wednesday</th>
+            <th width="100px">Thursday</th>
+            <th width="100px">Friday</th>
+            <th width="100px">Saturday</th>
+          </tr>
+          <tr align="center" style="background-color: aliceblue;">
+            <th width="100px">Closed</th>
+            <th width="100px">9-5</th>
+            <th width="100px">9-5</th>
+            <th width="100px">9-5</th>
+            <th width="100px">9-5</th>
+            <th width="100px">9-5</th>
+            <th width="100px">9-5</th>
+          </tr>
+        </table>
+        <br>
+        <hr>
+        <br>
+
+        <a href="https://www.google.com" target="_blank"><button style="font-size: 25px; background-color: grey; color: lightblue; border-radius: 5px;">click me</button></a>
+
+        <br><hr><br>
+        <!-- the action attribute sends data to this file -->
+        <!-- GET is for insensitive data, POST is for confidential info like username and password -->
+        <form action="index.php" method="post">
+
+          <!--when we click on the label our cursor moves to the text box, this is the use of FOR attribute paired with id-->
+          <label for="username">username:</label>
+          <input type="text" id="username" required minlength="6" maxlength="20" placeholder="username"><br>
+
+          <label for="password">password:</label>
+          <input type="password" id="password" required minlength="6" maxlength="20" placeholder="password">
+
+          <label for="email">email:</label>
+          <input type="email" id="email" placeholder="123-456-7890" patterns="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" placeholder="">
+
+          <label for="bday">birthdate:</label>
+          <input type="date">
+
+          <label for="quantity">quantity:</label>
+          <input type="number">
+
+          <input type="reset"><br>
+          <input type="submit" >
+        </form>
 
 
   </body>
