@@ -7,6 +7,16 @@
     <!--this will be shown as the tab name so look there-->
   </head>
   <body>
+    <header style="background-color: mediumpurple;">
+      <h1>Welcoome to the Test Site</h1>
+      <a href="">Home</a>
+      <a href="">About us</a>
+      <a href="">Products</a>
+      <a href="">Contact us</a>
+      </header>
+      <hr>
+      <main>
+
     <!--this contains the visible elemnts of the page-->
     <!--also the heading tag will have equivalent line breaks
          between them no matter the type-->
@@ -209,31 +219,66 @@ incidunt dolores exercitationem at, fugit laboriosam modi doloribus
         <br><hr><br>
         <!-- the action attribute sends data to this file -->
         <!-- GET is for insensitive data, POST is for confidential info like username and password -->
-        <form action="index.php" method="post">
+        <form action="index.php" method="post" enctype="multipart/form-data"><!--breaking big data into small parts and then reassembling-->
+          <!---its recommended to use this encryption type when sending large data like images-->
 
           <!--when we click on the label our cursor moves to the text box, this is the use of FOR attribute paired with id-->
           <label for="username">username:</label>
           <input type="text" id="username" required minlength="6" maxlength="20" placeholder="username"><br>
 
           <label for="password">password:</label>
-          <input type="password" id="password" required minlength="6" maxlength="20" placeholder="password">
+          <input type="password" id="password" required minlength="6" maxlength="20" placeholder="password"><br>
 
           <label for="email">email:</label>
-          <input type="email" id="email" placeholder="123-456-7890" patterns="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+          <input type="email" id="email" placeholder="123-456-7890" patterns="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
 
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" placeholder="">
+          <label for="phone">Phone #:</label>
+          <input type="tel" id="phone" placeholder=""><br>
 
           <label for="bday">birthdate:</label>
-          <input type="date">
+          <input type="date" id="bday"><br>
 
           <label for="quantity">quantity:</label>
-          <input type="number">
+          <input type="number" id="quantity" min="0" max="99" value="1"> <br>
+
+
+          <!-- to select only one option in radio buttons we put them in the same group by using the name attribute-->
+          <label for="title">Title:</label>
+
+          <label for="Mr.">Mr.</label>
+          <input type="radio" id="Mr." value="Mr." name="title">
+          <label for="Ms.">Ms.</label>
+          <input type="radio" id="Ms." value="Ms." name="title">
+          <label for="PhD.">PhD.</label>
+          <input type="radio" id="PhD." value="PhD." name="title"><br>
+
+          <label for="payment">payment</label>
+          <select id="payment">
+            <option value="visa">visa</option>
+            <option value="mastercard">mastercard</option>
+            <option value="giftcard">giftcard</option>
+          </select><br>
+
+          <label for="subscribe">subscribe:</label>
+          <input type="checkbox" id="subscribe"><br>
+
+          <label for="comment">comment:</label>
+          <textarea id="comment" rows="3" cols="25"></textarea><br>
+
+          <label for="file">file:</label>
+          <input type="file" id="file" accept="image/png, image/jpeg"><br>
 
           <input type="reset"><br>
-          <input type="submit" >
+          <input type="submit">
         </form>
 
+      </main>
+    
+      <footer style="background-color: mediumpurple;">
+        author: NESS <br>
+        &copy; copyright reserved <br>
+        <small><a href="mailto:test@test.com">test@test.com</a></small>
+      </footer>
 
   </body>
 </html>

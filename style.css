@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Codystar;
+    src: url(fonts/Codystar-Regular.ttf);
+}
+body{
+    background-color: black;
+}
+.top{
+    color: aliceblue;
+    font-family: Codystar, "Roboto Mono", "lucida console", "courier new";
+    font-size: 1em; /* 1em means 100% original size */
+    font-weight: bold;
+    font-style: normal;
+}
+#p1{
+    color: white;
+}
