@@ -8,9 +8,10 @@ body{
 .top{
     color: aliceblue;
     font-family: Codystar, "Roboto Mono", "lucida console", "courier new";
-    font-size: 1em; /* 1em means 100% original size */
+    font-size: 4em; /* 1em means 100% original size */
     font-weight: bold;
     font-style: normal;
+    text-shadow: 3px 3px 5px hsl(0, 100%, 61%);
 }
 #p1{
     color: white;
